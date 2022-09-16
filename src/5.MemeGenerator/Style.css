@@ -1,0 +1,97 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: Inter;
+}
+header{
+    display: flex;
+    justify-content: flex-start;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: aliceblue;
+    padding:20px 30px;
+    margin-bottom: 20px;
+    border:1px solid black;
+    align-items: center;
+}
+header > img{
+    width: 60px;
+    transform: scaleX(-1);
+    margin-right: 10px;
+}
+.react--course{
+    margin-left: auto;
+
+}
+
+main{
+    border:1px solid black; 
+    margin: 0px 30px;
+}
+
+.meme--container{
+    display: flex;
+    flex-direction: column;
+}
+
+.main--container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.main--input{
+    display: flex;
+    justify-content: space-between;
+}
+.main--input > input{
+    padding: 0px 10px;
+    height: 40px;
+    width: 300px;
+}
+.main--button{
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+
+    text-decoration: none;
+    color: white;
+    align-self: center;
+    margin: 10px 0px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.image--holder{
+    border: 1px solid black;
+    height: 350px;
+    margin: -10px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+}
+.upper--text{
+    height: 100%;
+    text-align: center;
+
+    padding-top: 30px;
+
+}
+.lower--text{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.upper--text, .lower--text{
+    font-weight: 900;
+    font-size: 2rem;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+}

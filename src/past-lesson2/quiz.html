@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+Challenge 1:
+Given an array of numbers, return an array of each number, squared
+*/
+const numbers = [1, 2, 3, 4, 5]
+// -->       [1, 4, 9, 16, 25]
+// Your code here
+let roots = numbers.map(num => Math.pow(num,2))
+console.log(roots)
+
+
+
+/*
+Challenge 2:
+Given an array of strings, return an array where 
+the first letter of each string is capitalized
+*/
+
+const names = ["alice", "bob", "charlie", "danielle"]
+// -->        ["Alice", "Bob", "Charlie", "Danielle"]
+// Your code here
+
+// let upperNames = names.map(item => capitalFirstLetter(item))
+
+// function capitalFirstLetter(item){
+//     let splitName = item.split('')
+//     let capitalItem = splitName.map((element, index ) => {
+//         if(index == 0){
+//             element = element.toUpperCase()
+//         }
+//          return element
+//     })
+//    return capitalItem.toString().replace(/,/g,'')
+// }
+
+let upperNames = names.map(item => {
+    return item[0].toUpperCase() + item.slice(1)
+})
+console.log(upperNames)
+
+
+/*
+Challenge 3:
+Given an array of strings, return an array of strings that wraps each
+of the original strings in an HTML-like <p></p> tag.
+
+E.g. given: ["Bulbasaur", "Charmander", "Squirtle"]
+return: ["<p>Bulbasaur</p>", "<p>Charmander</p>", "<p>Squirtle</p>"]
+*/
+
+const pokemon = ["Bulbasaur", "Charmander", "Squirtle"]
+// -->          ["<p>Bulbasaur</p>", "<p>Charmander</p>", "<p>Squirtle</p>"]
+// Your code here
+let parag = pokemon.map(element => {return element = `<p>${element}</p>`})
+console.log(parag)
+
+
+    </script>
+</body>
+</html>

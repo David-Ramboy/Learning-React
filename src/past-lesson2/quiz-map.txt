@@ -1,0 +1,21 @@
+1. What does the `.map()` array method do?
+
+    map method to iterate array into something useful and return it to a new array
+
+      -Usually take the original array and modified in som eway
+
+2. What do we usually use `.map()` for in React?
+
+    to iterate the props we gonna put to our component's jsx to display it without hardcode all of the
+    the attributes we put in the props, instead we iterate to how many number of components we display and with short  amount of lines we will give the props to the components by iterating it.
+
+    -Convert an array of raw data into an array of JSX elements that can displayed in the page
+
+3. Why is using `.map()` better than just creating the components
+   manually by typing them out?
+
+    to becone usable and by least of amount of effort we just defending to  the props and the 
+    array given values
+
+    -It makes our code more "self-sustaining" - not requiring additional changes
+    whenever the data changes

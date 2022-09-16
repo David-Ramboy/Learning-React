@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Inter,sans-serif;
+
+}
+nav{
+    display: flex;
+}
+.nav-logo{
+    width: 27px;
+    height: 24px;
+    align-self: center;
+    margin-right: 10px;
+}
+nav > p{
+    font-weight: 700;
+    align-self: center;
+    font-size: 22px;
+    color: #61DAFB;
+
+
+}
+nav > h1{
+    margin-left: auto;
+    align-self: center;
+    font-size: 16px;
+    color: #DEEBF8;
+}
+.container{
+    padding: 0px 26px;
+    border: 1px solid black;
+    background-color: #21222A;
+    position: relative;
+    transition: 1s;
+
+
+}
+.main{
+    height: 100vh;
+    position: relative;
+    z-index:1;
+
+}
+.main > h1, .main {
+    transition: 1s;
+        
+    color: #DEEBF8;
+}
+.main > ul > li::marker{
+    color: #61DAFB;
+    line-height: 30px;
+    width: 360px;
+    margin-left: -10px;
+    font-size: 1.5rem;
+    z-index:1;
+
+}
+.logo-background{
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background-image: url(../public/logo512.png);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: 15px 0px;
+    right: 1px;
+    top: 60px;
+    z-index:-1;
+    
+}
+.switch--mode{
+    width: 30px;
+    border: solid white 1px;
+    background-color: white;
+    align-self: center;
+    display: flex;
+    border-radius: 40%;
+    margin: 0 5px;
+    transition: 1s;
+    border: 2px solid white;
+
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transition: 1s;
+
+}
+.mode{
+    font-size: 0.5rem;
+    color: white;
+}
+.mode--left{
+    margin-left:  auto;
+}
+
+/* Light mode */
+.nightmode--headerMain{
+    color: black;
+}
+.nightmode--headerNav{
+    color: black;
+}
+.container--lightmode{
+    background-color: white;
+    transition: 1s;
+
+    color: black;
+}
+.switch--lightmode{
+    background-color: black;
+    transition: 1s;
+    border: 2px solid black;
+
+    justify-content: end;
+}
+.circle--lightmode{
+    background-color: white;
+    transition: 1s;
+
+}
+.parag--lightmode{
+    color: black !important;
+    transition: 1s;
+
+}
+

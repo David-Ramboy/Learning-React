@@ -1,0 +1,26 @@
+
+.text--form > input,textarea{
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 4px;
+    padding: 4px;
+    width: 200px;
+    height: 18px;
+}
+.text--form{
+    display: flex;
+    flex-wrap: wrap;
+}
+textarea{
+    align-items: center;
+}
+.checkbox{
+    margin: 0px;
+    border: 1px solid black;
+    width: initial;
+    display: inline;
+    background-color: aqua;
+}
+.checkbox--form{
+    display: initial;
+}
